@@ -12358,7 +12358,7 @@ Helpful information:
 </div>
 </div>**Answer:**
 
-I decided to predict "Detergents_Paper" because to me it feels like it is the feature that differs the most. After fitting and scoring I received a score of about 0.27. The low score leads me to believe "Detergents_Paper" is not necessary for identifying customer habits.
+I decided to predict "Detergents_Paper" because to me it feels like it is the feature that differs the most. After fitting and scoring I received a score of about 0.27. This low score suggests that spending habits on "Detergents_Paper" can not be easily predicted by other features. It appears that Detergents_Paper contains unique information in determining customer spending habits.
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -15025,8 +15025,8 @@ MzMzMzMzs7b8P6YbhZeIVDkmAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The strongest positive correlation to "Detergents_Paper" appears to be "Grocery" and "Milk". The data is not normally distributed and the majority of the data lies between 0 and 40000. In the other categories.</p>
-<p>My earlier prediction seems to agree. There is a slight correlation trend going on between "Detergents_Paper", "Milk", and "Grocery". Based on this it may be possible to predict a customers spending habits by consolidating some of these features.</p>
+<p>The strongest positive correlation to "Detergents_Paper" appears to be "Grocery", and a slight correlation between "Detergents_Paper" and "Milk". The data is NOT normally distributed. By focusing on the diagonal in the scatter plot it is clear that the majority of the data is skewed to the right. The skewness of the features is rather significant and is an indication that feature scaling will be needed to properly implement clustering.</p>
+<p>Given the correlations between "Detergents_Paper" and "Grocery", and the slight correlation between "Detergents_Paper" and "Milk" I think it may be possible to eliminate some of these categories from the data list and still have enough relevant information. That said, with the small score previously for "Detergents_Paper" it may still be relevant.</p>
 
 </div>
 </div>
