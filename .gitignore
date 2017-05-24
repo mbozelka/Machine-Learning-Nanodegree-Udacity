@@ -6,7 +6,6 @@ quizes-and-practice/
 
 # Logs #
 ########
-logs
 *.log
 npm-debug.log*
 
