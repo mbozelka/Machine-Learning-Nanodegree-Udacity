@@ -129,10 +129,16 @@ class LearningAgent(Agent):
             if self.epsilon > random.random():
                 action = random.choice(self.valid_actions)
             else:
+                ########################
+                # adding a random factor to the code based on the 
+                # first round review.
+                ########################
+                best_actions = []
                 mq = self.get_maxQ(state)
                 for best_action in self.Q[state]:
                     if mq == self.Q[state][best_action]:
-                        action = best_action
+                        best_actions.append(best_action)
+                action = random.choice(best_actions)
 
         return action
 
